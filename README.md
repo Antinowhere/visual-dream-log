@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dream Log of Doom
 
-## Getting Started
+A dream journal app that helps you log your dreams and transforms them into AI-generated imagery using OpenAI's DALL-E.
 
-First, run the development server:
+## Features
 
+- **Dream Logging**: Capture detailed dream entries with prompts for:
+  - Scene/Location
+  - Time of day
+  - Weather/Atmosphere
+  - Characters/People
+  - Context/Storyline
+  - Additional details
+  
+- **AI Image Generation**: Each dream is transformed into a unique, dreamlike image using DALL-E 3
+
+- **Dream Gallery**: Browse all your recorded dreams with their generated images
+
+- **Local Storage**: Dreams are saved locally in your browser
+
+- **Dark Theme**: Beautiful dark blue theme optimized for nighttime journaling
+
+## Setup
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create a `.env.local` file and add your OpenAI API key:
+```
+OPENAI_API_KEY=your-openai-api-key-here
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- OpenAI API (DALL-E 3)
+- React Hook Form
+- Lucide Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Click "New Dream" to open the dream entry form
+2. Fill in all the fields to capture your dream details
+3. Click "Save Dream & Generate Image" 
+4. Wait for the AI to generate a unique visual representation
+5. View your dreams in the gallery
+6. Click on any dream to see full details
 
-## Deploy on Vercel
+## Note
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make sure you have an active OpenAI API key with access to DALL-E 3 image generation.# visual-dream-log
